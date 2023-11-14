@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Museum Feedback Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+<h1 id="title">Museum Feedback Form</h1>
+<p id="description">Thank you for taking the time to help us improve the platform</p>
+<form method="post" id="survey-form"> 
+<fieldset>
+  <label for="name" id="name-label">Name
+    <input id="name" name="name" type="text"   placeholder="Enter your name"  required>
+  </label>
+  <label for="email" id="email-label">Email
+    <input id="email" type="email" placeholder="Enter your email" required >
+  </label>
+  <label for="age" id="number-label">Age(optional)
+    <input id="number" min="10" max="100" type="number" placeholder="Age">
+  </label>
+  <label for="purpose"> Purpose of Visit:
+  <select id="dropdown">
+    <option value=""> Select Purpose</option>
+    <option value="1">Educational</option>
+    <option value="2">Entertainment</option>
+    <option value="3">Research</option>
+    <option value="4">other</option>
+  </select>
+  </label>
+  <label>Gender:
+    <label for="male"><input id="male" type="radio" name="account-type" value="male" class="inline"> Male</label>
+    <label for="female"><input id="female" type="radio" name="account-type" value="femail" class="inline"> Female</label>
+  </label>
+  </fieldset>
+  <fieldset>
+  <label for="frequency"> Frequency of Museum Visits:
+  <select id="dropdown">
+    <option value=""> Select an option</option>
+    <option value="1">First-time visitor</option>
+    <option value="2">Once a year</option>
+    <option value="3">Once a month</option>
+    <option value="4">other</option>
+  </select>
+  </label>
+<label>What would you like to see improved? (Check all that apply)
+<label for="exhibition-variety">
+  <input type="checkbox" id="exhibition-variety" value="exhibition-variety" class="inline">
+  Exhibition variety
+</label>
+<label for="interactive-exhibits">
+  <input type="checkbox" id="interactive-exhibits" value="interactive-exhibits" class="inline">
+  Interactive exhibits
+</label>
+<label for="additional-seating">
+  <input type="checkbox" id="additional-seating" value="additional-seating" class="inline">
+  Additional seating/rest areas
+</label>
+<label for="knowledgeable-staff">
+  <input type="checkbox" id="knowledgeable-staff" value="knowledgeable-staff" class="inline">
+  Knowledgeable staff
+</label>
+<label for="better-crowd-management">
+  <input type="checkbox" id="better-crowd-management" value="better-crowd-management" class="inline">
+  Better crowd management
+</label>
+<label for="other">
+  <input type="checkbox" id="other" value="other" class="inline">
+  Other
+</label>
+</label>
+    </fieldset>
+  <fieldset>
+    <label for="comments">Any comments or suggestions?
+    <textarea id="bio" name="bio" rows="6" cols="30" placeholder="Enter your comment here..."></textarea>
+    </label>
+  </fieldset>
+  <input id="submit" type="submit" value="Submit" />
+</form>
+  </body>
+</html>
